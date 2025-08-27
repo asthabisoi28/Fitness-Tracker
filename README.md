@@ -2,8 +2,11 @@
 Developed a comprehensive fitness tracking web application that empowers users to log daily health activities, visualize progress through interactive charts, set and monitor personal fitness goals, and receive AI-powered insights and recommendations for achieving optimal wellness and maintaining a healthy lifestyle.
 
 Key Features
+
 Daily Activity Logging - Steps, calories, water, sleep, weight, mood tracking
+
 Interactive Dashboard - Beautiful metric cards with real-time progress visualization
+
 AI-Powered Analytics - Health score calculations and personalized recommendations
 
 Goal Management - Create and track multiple fitness goals with progress bars
@@ -24,9 +27,15 @@ Explore Analytics through interactive charts
 Get AI Insights for personalized health recommendations
 
 fitness-tracker-app/
+
 ├── index.html          # Main application
+
 ├── script.js           # Frontend logic
+
 ├── style.css           # Styling & animations
+
 ├── server.js           # Express backend
+
 ├── package.json        # Dependencies
+
 └── setup.md           # Detailed guide
