@@ -61,9 +61,15 @@ Application Structure
 
 fitness-tracker-app/
 ├── index.html              # Main application page
+
 ├── script.js               # Frontend JavaScript logic
+
 ├── style.css               # Styling and animations
+
 ├── server.js               # Express.js backend server
+
 ├── package.json            # Project dependencies
+
 ├── setup.md                # Detailed setup guide
+
 └── fitness_tracker.db      # SQLite database (auto-created)
