@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker with Charts</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Fitness Tracker</h1>
+    </header>
+
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#" onclick="scrollToTop()">Home</a>
+        <a href="#" onclick="scrollToSection('dashboard-cards')">Track Activity</a>
+        <a href="#" onclick="scrollToChartsAndShowTrends()">Progress History</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Input Section -->
+        <div class="card form-card">
+            <div class="form-header">
+                <h2>📊 Track Your Daily Progress</h2>
+                <p>Log your daily activities to get personalized insights and recommendations</p>
+            </div>
+            <form id="fitness-form" class="modern-form">
+                <label for="date">Date:</label>
+                <input type="date" id="date-input" required>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="steps">Steps Taken:</label>
+                        <input type="number" id="steps-input" placeholder="e.g., 8500" min="0" max="50000" required>
+                        <small>Daily goal: 10,000 steps</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="distance">Distance (km):</label>
+                        <input type="number" id="distance-input" placeholder="e.g., 6.5" min="0" max="100" step="0.1" required>
+                        <small>Approx. 0.8km per 1000 steps</small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="calories">Calories Burned:</label>
+                        <input type="number" id="calories-input" placeholder="e.g., 450" min="0" max="5000" required>
+                        <small>From exercise only</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="calories-consumed">Calories Consumed:</label>
+                        <input type="number" id="calories-consumed-input" placeholder="e.g., 2100" min="500" max="5000" required>
+                        <small>Total daily intake</small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="water">Water Intake (glasses):</label>
+                        <input type="number" id="water-input" placeholder="e.g., 7" min="0" max="20" required>
+                        <small>1 glass = 250ml</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="sleep">Sleep Hours:</label>
+                        <input type="number" id="sleep-input" placeholder="e.g., 7.5" min="0" max="24" step="0.5" required>
+                        <small>Recommended: 7-9 hours</small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="exercise">Exercise Minutes:</label>
+                        <input type="number" id="active-input" placeholder="e.g., 45" min="0" max="300" required>
+                        <small>Moderate to vigorous activity</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Weight (kg):</label>
+                        <input type="number" id="weight-input" placeholder="e.g., 70.5" min="30" max="200" step="0.1">
+                        <small>Optional - for tracking</small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mood">Mood/Energy Level:</label>
+                    <select id="mood-input" required>
+                        <option value="">Select your mood</option>
+                        <option value="5">😄 Excellent</option>
+                        <option value="4">😊 Good</option>
+                        <option value="3">😐 Average</option>
+                        <option value="2">😔 Low</option>
+                        <option value="1">😞 Poor</option>
+                    </select>
+                </div>
+
+
+                <button type="submit">Save Daily Progress</button>
+            </form>
+        </div>
+
+        <!-- Replace the existing table section with this -->
+        <div class="card">
+            <h2>Today's Progress</h2>
+            <div id="dashboard-cards"></div>
+        </div>
+
+        <div class="card">
+            <h2>Fitness History</h2>
+            <div id="history-container">
+                <table id="history-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Steps</th>
+                            <th>Distance</th>
+                            <th>Cal. Burned</th>
+                            <th>Cal. Consumed</th>
+                            <th>Water</th>
+                            <th>Sleep</th>
+                            <th>Exercise</th>
+                            <th>Weight</th>
+                            <th>Mood</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- Charts Section - Main Highlight -->
+        <div class="hero-charts-section">
+            <div class="charts-hero">
+                <h1>📊 Your Fitness Analytics</h1>
+                <p>Visualize your progress, track your goals, and get personalized insights</p>
+            </div>
+            
+            <div class="chart-navigation">
+                <div class="nav-pills">
+                    <button class="nav-pill active" onclick="showChart('trends')" data-chart="trends">
+                        <div class="pill-icon">📈</div>
+                        <div class="pill-content">
+                            <span class="pill-title">Trends</span>
+                            <span class="pill-desc">Progress over time</span>
+                        </div>
+                    </button>
+                    <button class="nav-pill" onclick="showChart('comparison')" data-chart="comparison">
+                        <div class="pill-icon">📊</div>
+                        <div class="pill-content">
+                            <span class="pill-title">Comparison</span>
+                            <span class="pill-desc">Weekly analysis</span>
+                        </div>
+                    </button>
+                    <button class="nav-pill" onclick="showChart('goals')" data-chart="goals">
+                        <div class="pill-icon">🎯</div>
+                        <div class="pill-content">
+                            <span class="pill-title">Goals</span>
+                            <span class="pill-desc">Achievement tracking</span>
+                        </div>
+                    </button>
+                    <button class="nav-pill" onclick="showChart('insights')" data-chart="insights">
+                        <div class="pill-icon">🧠</div>
+                        <div class="pill-content">
+                            <span class="pill-title">AI Feedback</span>
+                            <span class="pill-desc">Smart recommendations</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="chart-main-container">
+                <div class="chart-wrapper">
+                    <canvas id="fitnessChart"></canvas>
+                </div>
+                <div class="chart-sidebar">
+                    <div id="statistics-panel" class="statistics-panel"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Goals Management Section -->
+        <div class="card goals-management">
+            <div class="goals-header">
+                <h2>🎯 Your Fitness Goals</h2>
+                <button class="btn-primary" onclick="showGoalModal()">+ Add New Goal</button>
+            </div>
+            <div id="goals-container" class="goals-grid">
+                <!-- Goals will be loaded here -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fitness Tracker | Designed by Astha Bisoi
+        </p>
+    </footer>
+
+    <!-- Link to External JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
