@@ -3,28 +3,29 @@ Developed a comprehensive fitness tracking web application that empowers users t
 
 Key Features
 
-Daily Activity Logging - Steps, calories, water, sleep, weight, mood tracking
+1)Daily Activity Logging - Steps, calories, water, sleep, weight, mood tracking
 
-Interactive Dashboard - Beautiful metric cards with real-time progress visualization
+2)Interactive Dashboard - Beautiful metric cards with real-time progress visualization
 
-AI-Powered Analytics - Health score calculations and personalized recommendations
+3)AI-Powered Analytics - Health score calculations and personalized recommendations
 
-Goal Management - Create and track multiple fitness goals with progress bars
+4)Goal Management - Create and track multiple fitness goals with progress bars
 
-Advanced Charts - Trends analysis, comparisons, and radar performance charts
+5)Advanced Charts - Trends analysis, comparisons, and radar performance charts
 
-Modern UI - Glass morphism design with dark/light mode toggle
+6)Modern UI - Glass morphism design with dark/light mode toggle
 
- Usage
-Log Activities using the comprehensive form
+Usage
 
-Set Goals through the goals management interface
+-Log Activities using the comprehensive form
 
-View Progress on the dashboard with metric cards
+-Set Goals through the goals management interface
 
-Explore Analytics through interactive charts
+-View Progress on the dashboard with metric cards
 
-Get AI Insights for personalized health recommendations
+-Explore Analytics through interactive charts
+
+-Get AI Insights for personalized health recommendations
 
 fitness-tracker-app/
 
