@@ -1,8 +1,10 @@
 # Fitness-Tracker
 Developed a comprehensive fitness tracking web application that empowers users to log daily health activities, visualize progress through interactive charts, set and monitor personal fitness goals, and receive AI-powered insights and recommendations for achieving optimal wellness and maintaining a healthy lifestyle.
 
-Features Overview
-🎯 Core Functionality
+Features Overview        
+
+Core Functionality
+
 Daily Activity Logging - Track steps, distance, calories burned/consumed, water intake, sleep hours, active minutes, weight, and mood
 
 Interactive Dashboard - Beautiful metric cards with real-time progress visualization and gradient animations
@@ -11,7 +13,8 @@ Goal Management System - Create, track, and manage multiple fitness goals with d
 
 AI-Powered Insights - Receive personalized recommendations and health score calculations based on your data
 
-📈 Advanced Analytics
+Advanced Analytics
+
 Hero Charts Section - Stunning gradient-designed chart navigation with multiple visualization types:
 
 Trends Analysis - Dynamic charts with moving averages and trend lines
@@ -22,7 +25,8 @@ AI Feedback Radar - Multi-dimensional performance analysis with health scoring
 
 Goal Tracking - Visual progress toward daily and long-term objectives
 
-🎨 Modern User Experience
+Modern User Experience
+
 Glass Morphism UI - Modern design with blur effects and gradient backgrounds
 
 Responsive Design - Seamless experience across desktop, tablet, and mobile devices
