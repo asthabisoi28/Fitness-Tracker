@@ -27,6 +27,18 @@ Usage
 
 -Get AI Insights for personalized health recommendations
 
+
+Tech Stack
+
+Backend: Node.js, Express.js, SQLite3, RESTful API
+
+Frontend: Vanilla JavaScript, Chart.js, CSS3 animations
+
+Features: Responsive design, real-time notifications, data persistence
+
+
+Application Structure
+
 fitness-tracker-app/
 
 ├── index.html          # Main application
