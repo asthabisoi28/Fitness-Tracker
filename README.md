@@ -119,6 +119,3 @@ We welcome contributions to the Fitness-Tracker project! To ensure a smooth coll
 *   **Testing:** If applicable, include unit or integration tests for new features or bug fixes.
 
 
-
-
-This means that by default, all rights are reserved by the copyright holder(s) (in this case, asthabisoi28). If you wish to use, modify, or distribute this software, you should contact the main contributor for explicit permission. There are no explicit usage restrictions or permissions granted without a formal license.
