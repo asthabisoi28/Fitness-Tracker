@@ -1,11 +1,10 @@
-# Fitness-Tracker 🏋️‍♀️
+![Express-000000](https://github.com/user-attachments/assets/a4aca024-2373-471e-8092-604078edf860)# Fitness-Tracker 🏋️‍♀️
 
 Track your health, visualize progress, and achieve your wellness goals with AI-powered insights.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue) ![License](https://img.shields.io/badge/license-None-lightgrey) ![Stars](https://img.shields.io/github/stars/asthabisoi28/Fitness-Tracker?style=social) ![Forks](https://img.shields.io/github/forks/asthabisoi28/Fitness-Tracker?style=social)
 
-![Fitness-Tracker Preview](/preview_example.png)
-
+![Uploading<svg xmlns="http://www.w3.org/2000/svg" width="71" height="20" role="img" aria-label="Express"><title>Express</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="71" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="0" height="20" fill="#555"/><rect x="0" width="71" height="20" fill="#000000"/><rect width="71" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><image x="5" y="3" width="14" height="14" href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPkV4cHJlc3M8L3RpdGxlPjxwYXRoIGQ9Ik0yNCAxOC41ODhhMS41MjkgMS41MjkgMCAwMS0xLjg5NS0uNzJsLTMuNDUtNC43NzEtLjUtLjY2Ny00LjAwMyA1LjQ0NGExLjQ2NiAxLjQ2NiAwIDAxLTEuODAyLjcwOGw1LjE1OC02LjkyLTQuNzk4LTYuMjUxYTEuNTk1IDEuNTk1IDAgMDExLjkuNjY2bDMuNTc2IDQuODMgMy41OTYtNC44MWExLjQzNSAxLjQzNSAwIDAxMS43ODgtLjY2OEwyMS43MDggNy45bC0yLjUyMiAzLjI4M2EuNjY2LjY2NiAwIDAwMCAuOTk0bDQuODA0IDYuNDEyek0uMDAyIDExLjU3NmwuNDItMi4wNzVjMS4xNTQtNC4xMDMgNS44NTgtNS44MSA5LjA5NC0zLjI3IDEuODk1IDEuNDg5IDIuMzY4IDMuNTk3IDIuMjc1IDUuOTczSDEuMTE2Qy45NDMgMTYuNDQ3IDQuMDA1IDE5LjAwOSA3LjkyIDE3LjdhNC4wNzggNC4wNzggMCAwMDIuNTgyLTIuODc2Yy4yMDctLjY2Ni41NDgtLjc4IDEuMTc0LS41ODhhNS40MTcgNS40MTcgMCAwMS0yLjU4OSAzLjk1NyA2LjI3MiA2LjI3MiAwIDAxLTcuMzA2LS45MzMgNi41NzUgNi41NzUgMCAwMS0xLjY0LTMuODU4YzAtLjIzNS0uMDgtLjQ1NS0uMTM0LS42NjZBODguMzMgODguMzMgMCAwMTAgMTEuNTc3em0xLjEyNy0uMjg2aDkuNjU0Yy0uMDYtMy4wNzYtMi4wMDEtNS4yNTgtNC41OS01LjI3OC0yLjg4Mi0uMDQtNC45NDQgMi4wOTQtNS4wNzEgNS4yNjR6Ii8+PC9zdmc+"/><text aria-hidden="true" x="445" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="430">Express</text><text x="445" y="140" transform="scale(.1)" fill="#fff" textLength="430">Express</text></g></svg> Express-000000.svg…]()
 
 ## ✨ Features
 
